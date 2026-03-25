@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HackVerse 2025 — AR/VR & AI/ML Hackathon</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-icon">H</div>
+    <span class="nav-logo-text">HackVerse 2025</span>
+  </div>
+  <div class="nav-links">
+    <a onclick="scrollTo('home')">Home</a>
+    <a onclick="scrollTo('about')">About</a>
+    <a onclick="scrollTo('tracks')">Tracks</a>
+    <a onclick="scrollTo('schedule')">Schedule</a>
+    <a onclick="scrollTo('faq')">FAQ</a>
+  </div>
+  <button class="nav-register">Register</button>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-glow-left"></div>
+  <div class="hero-glow-right"></div>
+  <div class="hero-date-badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    March 15–17, 2025
+  </div>
+  <h1 class="hero-title">HackVerse 2025</h1>
+  <p class="hero-subtitle">AR/VR & AI/ML Hackathon</p>
+  <p class="hero-tagline">Build the Future. Register Now.</p>
+  <div class="hero-btns">
+    <button class="btn-primary">Register Now</button>
+    <button class="btn-secondary" onclick="scrollTo('about')">Learn More</button>
+  </div>
+  <div class="countdown">
+    <div class="countdown-box"><div class="countdown-num" id="cd-days">00</div><div class="countdown-label">DAYS</div></div>
+    <div class="countdown-dot">·</div>
+    <div class="countdown-box"><div class="countdown-num" id="cd-hours">00</div><div class="countdown-label">HOURS</div></div>
+    <div class="countdown-dot">·</div>
+    <div class="countdown-box"><div class="countdown-num" id="cd-mins">00</div><div class="countdown-label">MINUTES</div></div>
+    <div class="countdown-box"><div class="countdown-num" id="cd-secs">00</div><div class="countdown-label">SECONDS</div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About HackVerse 2025</h2>
+  <p class="about-desc">HackVerse 2025 is the ultimate platform for students passionate about emerging technologies. Join us for 48 hours of innovation, collaboration, and pushing the boundaries of what's possible with AR/VR and AI/ML technologies.</p>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon icon-cyan">💻</div>
+      <h3>48 Hours</h3>
+      <p>Non-stop coding, building, and creating innovative solutions</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon icon-violet">👥</div>
+      <h3>500+ Participants</h3>
+      <p>Connect with talented developers, designers, and innovators</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon icon-cyan2">💡</div>
+      <h3>Expert Mentorship</h3>
+      <p>Learn from industry leaders and get guidance for your projects</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon icon-violet2">🚀</div>
+      <h3>Real-World Impact</h3>
+      <p>Build solutions that can change the future of technology</p>
+    </div>
+  </div>
+  <div class="mission-grid">
+    <div class="mission-card cyan-border">
+      <h3>Our Mission</h3>
+      <p>To empower the next generation of innovators by providing them with the platform, resources, and mentorship needed to create groundbreaking solutions in AR/VR and AI/ML. We believe in the power of collaboration and hands-on learning to shape the future of technology.</p>
+    </div>
+    <div class="mission-card violet-border">
+      <h3>What to Expect</h3>
+      <ul>
+        <li>Hands-on workshops and technical sessions</li>
+        <li>One-on-one mentorship from industry experts</li>
+        <li>Networking opportunities with like-minded innovators</li>
+        <li>Access to cutting-edge tools and technologies</li>
+        <li>Exciting prizes and recognition</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRACKS -->
+<section id="tracks">
+  <h2 class="section-title">Choose Your Track</h2>
+  <p class="section-sub">Select your domain and create groundbreaking solutions</p>
+  <div class="tracks-grid">
+    <div class="track-card cyan-card">
+      <div class="track-icon icon-cyan">🥽</div>
+      <h3>AR/VR Track</h3>
+      <p>Spatial computing, immersive experiences, XR applications, metaverse solutions, and virtual reality innovations that push the boundaries of digital interaction.</p>
+      <div class="track-tags">
+        <span class="tag tag-cyan">Spatial Computing</span>
+        <span class="tag tag-cyan">XR Apps</span>
+        <span class="tag tag-cyan">Metaverse</span>
+        <span class="tag tag-cyan">Immersive UX</span>
+      </div>
+    </div>
+    <div class="track-card violet-card">
+      <div class="track-icon icon-violet">🧠</div>
+      <h3>AI/ML Track</h3>
+      <p>Computer vision, natural language processing, generative AI, intelligent systems, machine learning models that solve real-world problems.</p>
+      <div class="track-tags">
+        <span class="tag tag-violet">Computer Vision</span>
+        <span class="tag tag-violet">NLP</span>
+        <span class="tag tag-violet">Generative AI</span>
+        <span class="tag tag-violet">ML Models</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY PARTICIPATE -->
+<section id="why">
+  <h2 class="section-title">Why Participate?</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon icon-cyan">🏆</div>
+      <h3>Prizes</h3>
+      <p>Worth $50,000+</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon icon-violet">👨‍💼</div>
+      <h3>Mentors</h3>
+      <p>Industry Experts</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon icon-cyan2">🎖️</div>
+      <h3>Certificates</h3>
+      <p>For All Participants</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon icon-violet2">🌐</div>
+      <h3>Networking</h3>
+      <p>Connect & Collaborate</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+  <h2 class="section-title">Event Schedule</h2>
+  <p class="section-sub">Three days of innovation, collaboration, and building the future</p>
+
+  <div class="day-block">
+    <div class="day-header">
+      <span style="font-size:18px">📅</span>
+      <span>Day 1 – March 15</span>
+    </div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>09:00 AM</div><div><div class="sched-title">Registration & Check-in</div><div class="sched-sub">Welcome kit distribution</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 AM</div><div><div class="sched-title">Opening Ceremony</div><div class="sched-sub">Keynote & track introductions</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>11:00 AM</div><div><div class="sched-title">Hacking Begins</div><div class="sched-sub">Start building your projects</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>01:00 PM</div><div><div class="sched-title">Lunch Break</div><div class="sched-sub">Networking opportunity</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>06:00 PM</div><div><div class="sched-title">Tech Talks</div><div class="sched-sub">Industry expert sessions</div></div></div>
+  </div>
+
+  <div class="day-block">
+    <div class="day-header">
+      <span style="font-size:18px">📅</span>
+      <span>Day 2 – March 16</span>
+    </div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>09:00 AM</div><div><div class="sched-title">Mentorship Sessions</div><div class="sched-sub">Get guidance from experts</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</div><div><div class="sched-title">Checkpoint Review</div><div class="sched-sub">Progress evaluation</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>01:00 PM</div><div><div class="sched-title">Lunch & Workshops</div><div class="sched-sub">Skill-building sessions</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>06:00 PM</div><div><div class="sched-title">Mini Demos</div><div class="sched-sub">Showcase progress</div></div></div>
+  </div>
+
+  <div class="day-block">
+    <div class="day-header">
+      <span style="font-size:18px">📅</span>
+      <span>Day 3 – March 17</span>
+    </div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>09:00 AM</div><div><div class="sched-title">Final Sprint</div><div class="sched-sub">Complete your projects</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</div><div><div class="sched-title">Submission Deadline</div><div class="sched-sub">Submit your project</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>02:00 PM</div><div><div class="sched-title">Project Demos</div><div class="sched-sub">Present to judges</div></div></div>
+    <div class="schedule-item"><div class="sched-time"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>05:00 PM</div><div><div class="sched-title">Award Ceremony</div><div class="sched-sub">Winner announcements</div></div></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq-title-wrap">
+    <span class="faq-icon">❓</span>
+    <h2 class="section-title" style="margin-bottom:0">FAQs</h2>
+  </div>
+  <p class="section-sub">Got questions? We've got answers!</p>
+  <div class="faq-list">
+    <div class="faq-item open" onclick="toggleFaq(this)">
+      <div class="faq-q">Who can participate in HackVerse 2025? <span class="faq-arrow">▲</span></div>
+      <div class="faq-a">HackVerse 2025 is open to all college and university students from any discipline. Whether you're studying computer science, design, business, or any other field, you're welcome to participate!</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Do I need a team to participate? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">You can participate solo or as a team of up to 4 members. We encourage teams as collaboration often leads to better solutions, but solo participants are absolutely welcome!</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">What should I bring to the hackathon? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">Bring your laptop, charger, any hardware you need for your project, and your enthusiasm! We'll provide food, beverages, and workspace. Feel free to bring sleeping bags if you plan to work through the night.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Is there any participation fee? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">No! HackVerse 2025 is completely free to participate. We provide meals, snacks, swag, and all necessary resources at no cost to participants.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">What kind of projects can I build? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">You can build any project related to AR/VR or AI/ML. This includes mobile apps, web apps, hardware projects, games, or any creative solution that leverages these technologies.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Will there be mentors available? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">Yes! We have industry experts from top tech companies who will be available throughout the hackathon for one-on-one mentorship sessions.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">What are the prizes? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">Total prize pool is $50,000+. First place wins $20,000, second place wins $10,000, and third place wins $5,000. Track-specific prizes and special category awards are also available.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Do I need prior experience in AR/VR or AI/ML? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">No prior experience required! We welcome beginners and experts alike. Our workshops and mentors will help you get up to speed on the technologies you need.</div>
+    </div>
+    <div class="faq-contact">
+      <p>Still have questions?</p>
+      <p>Reach out to us at <a href="mailto:contact@hackverse2025.com">contact@hackverse2025.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>
+        <div class="nav-logo-icon" style="width:32px;height:32px;font-size:14px">H</div>
+        HackVerse 2025
+      </h3>
+      <p>Building the future through AR/VR and AI/ML innovation. Join us in creating groundbreaking solutions.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a onclick="scrollTo('home')">Home</a></li>
+        <li><a onclick="scrollTo('about')">About</a></li>
+        <li><a onclick="scrollTo('tracks')">Tracks</a></li>
+        <li><a onclick="scrollTo('schedule')">Schedule</a></li>
+        <li><a onclick="scrollTo('faq')">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>✉️ <a href="mailto:contact@hackverse2025.com">contact@hackverse2025.com</a></p>
+      <p>📍 Innovation Hub, Tech Campus<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Francisco, CA</p>
+      <div class="social-links">
+        <a href="#">𝕏</a>
+        <a href="#">📸</a>
+        <a href="#">in</a>
+        <a href="#">⌥</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 HackVerse. All rights reserved. Built with passion for innovation.</div>
+</footer>
+
+<!-- REGISTER MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h2>Register for HackVerse 2025</h2>
+    <p class="modal-sub">Fill in your details to secure your spot</p>
+    <div class="form-steps">
+      <div class="step-dot active" id="s1"></div>
+      <div class="step-dot" id="s2"></div>
+      <div class="step-dot" id="s3"></div>
+      <div class="step-dot" id="s4"></div>
+    </div>
+    <div id="step1">
+      <div class="form-row">
+        <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Enter your full name"/></div>
+        <div class="form-group"><label>Email Address *</label><input type="email" placeholder="your@email.com"/></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+        <div class="form-group"><label>Year of Study</label>
+          <select><option>Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select>
+        </div>
+      </div>
+      <div class="form-group"><label>College / University *</label><input type="text" placeholder="Your college name"/></div>
+      <div class="form-group"><label>Department / Branch</label><input type="text" placeholder="e.g. Computer Science"/></div>
+      <div class="form-nav"><button class="btn-next" onclick="goStep(2)">Next →</button></div>
+    </div>
+    <div id="step2" style="display:none">
+      <div class="form-group"><label>Select Track *</label>
+        <div class="track-options">
+          <div class="track-option selected" id="t1" onclick="selectTrack('t1','t2')"><div class="t-icon">🥽</div><div class="t-name">AR/VR Track</div></div>
+          <div class="track-option" id="t2" onclick="selectTrack('t2','t1')"><div class="t-icon">🧠</div><div class="t-name">AI/ML Track</div></div>
+        </div>
+      </div>
+      <div class="form-group"><label>Participation Type</label>
+        <select><option>Solo</option><option>Team (2-4 members)</option></select>
+      </div>
+      <div class="form-group"><label>Team Name (if team)</label><input type="text" placeholder="Your awesome team name"/></div>
+      <div class="form-group"><label>Project Idea (brief)</label><textarea placeholder="Describe your project idea in 2-3 sentences..."></textarea></div>
+      <div class="form-nav">
+        <button class="btn-back" onclick="goStep(1)">← Back</button>
+        <button class="btn-next" onclick="goStep(3)">Next →</button>
+      </div>
+    </div>
+    <div id="step3" style="display:none">
+      <div class="form-group"><label>LinkedIn Profile</label><input type="url" placeholder="https://linkedin.com/in/yourname"/></div>
+      <div class="form-group"><label>GitHub Profile</label><input type="url" placeholder="https://github.com/yourusername"/></div>
+      <div class="form-group"><label>T-shirt Size</label>
+        <select><option>Select size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
+      </div>
+      <div class="form-group"><label>How did you hear about us?</label>
+        <select><option>Select option</option><option>Instagram</option><option>College Notice Board</option><option>Friend / Classmate</option><option>LinkedIn</option><option>WhatsApp Group</option><option>Other</option></select>
+      </div>
+      <div class="form-nav">
+        <button class="btn-back" onclick="goStep(2)">← Back</button>
+        <button class="btn-next" onclick="goStep(4)">Submit →</button>
+      </div>
+    </div>
+    <div id="step4" style="display:none">
+      <div class="success-screen">
+        <div class="success-icon">✅</div>
+        <h3>You're Registered!</h3>
+        <p>Check your email for confirmation details.<br>See you at HackVerse 2025! 🚀</p>
+        <button class="btn-primary" style="margin-top:2rem" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
